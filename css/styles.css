@@ -1,0 +1,115 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --green10: #78b454;
+  --blue10: #295ba7;
+}
+
+i,
+span {
+  color: white;
+}
+
+header {
+  display: flex;
+  background: url(./assets/patternECOStransparente.png),
+    linear-gradient(to bottom right, var(--blue10), var(--green10));
+}
+
+header a {
+  padding: 12px 12px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul div {
+  display: flex;
+}
+
+.nav-esquerda {
+  padding-left: 20px;
+}
+
+.nav-esquerda div i + span {
+  margin-left: 10px;
+}
+
+.nav-esquerda div input {
+  margin-left: 20px;
+}
+
+.nav-esquerda .hamburguer,
+.nav-direita .hamburguer {
+  margin-top: 7px;
+}
+
+.nav-direita {
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+}
+
+.nav-direita li + li {
+  padding-left: 20px;
+}
+
+nav input[type='text'] {
+  background: rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 30px;
+  border: none;
+}
+
+input::placeholder {
+  padding-left: 5px;
+  color: white;
+}
+
+nav input[type='text']:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 1px solid var(--green10);
+}
+
+/* Body */
+
+body {
+  background-color: #eff2f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.news {
+  width: calc(100% - 40%);
+  padding-top: 10px;
+  border-radius: 5px;
+  background: #f8f9fb;
+  -webkit-box-shadow: -2px 0px 26px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 0px 26px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 0px 26px -15px rgba(0, 0, 0, 0.75);
+}
+
+.news h5 {
+  text-align: justify;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-weight: lighter;
+}

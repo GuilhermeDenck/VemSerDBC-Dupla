@@ -1,0 +1,11 @@
+@media screen and (max-width: 753px) {
+  .input-search {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .input-search {
+    display: none;
+  }
+}
