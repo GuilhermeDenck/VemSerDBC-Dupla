@@ -1,6 +1,29 @@
+@media screen and (max-width: 930px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-news {
+    align-self: center;
+  }
+
+}
+
 @media screen and (max-width: 753px) {
   .input-search {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news {
+    width: 100%;
   }
 }
 
