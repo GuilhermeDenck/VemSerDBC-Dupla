@@ -8,6 +8,7 @@
 
 :root {
   --green10: #78b454;
+  --green20: #33A76F;
   --blue10: #295ba7;
 }
 
@@ -20,9 +21,11 @@ header {
   display: flex;
   background: url(../assets/patternECOStransparente.png),
     linear-gradient(to bottom right, var(--blue10), var(--green10));
+  display: flex;
+  align-items: center;
 }
 
-header a {
+header a > img {
   padding: 12px 12px;
 }
 
@@ -52,8 +55,8 @@ nav ul div {
   margin-left: 20px;
 }
 
-.nav-esquerda .hamburguer,
-.nav-direita .hamburguer {
+.nav-esquerda .icons,
+.nav-direita .icons {
   margin-top: 7px;
 }
 
@@ -65,6 +68,17 @@ nav ul div {
 
 .nav-direita li + li {
   padding-left: 20px;
+}
+
+.input-search {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px;
 }
 
 nav input[type='text'] {
@@ -95,41 +109,37 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
+/* Noticias */
+
 .news {
-  width: calc(100% - 40%);
+  width: calc(100% - 41%);
   padding-top: 10px;
   border-radius: 5px;
   background: #f8f9fb;
-  -webkit-box-shadow: -2px 0px 26px -15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 0px 26px -15px rgba(0, 0, 0, 0.75);
-  box-shadow: -2px 0px 26px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
 }
 
-.news h5 {
+h5 {
   font-size: 12px;
   text-align: justify;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  font-weight: lighter;
-}
-
-hr { 
-  display: block; 
-  height: 1px;
-  border: 0; 
-  border-top: 1px solid #ccc;
+  font-weight: normal;
+  border-bottom: solid 1px #d9d9d9cb;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card {
   display: flex;
   margin: 10px 10px;
   border-radius: 10px;
-  -webkit-box-shadow: -2px 0px 26px -15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 0px 26px -15px rgba(0, 0, 0, 0.75);
-  box-shadow: -2px 0px 26px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
 }
+
 
 .card-news > figure > img {
   -webkit-border-top-left-radius: 10px;
@@ -156,16 +166,16 @@ hr {
   font-size: 15px;
 }
 
-.coracao {
-  color: red;
+.heart {
+  color: #DC3545;
 }
 
-.comments, .visu {
+.comments, .views {
   color: #6C757D;
 }
 
 
-.coracao + span , .comments + span, .visu + span{
+.heart + span , .comments + span, .views + span{
   color: #6C757D;
 }
 
@@ -185,3 +195,62 @@ hr {
 .card-info > div div + div:last-child {
   padding-right: 15px;
 }
+
+/* Processos */
+
+.processos {
+  width: calc(100% - 62%);
+  height: 370px;
+  padding-top: 10px;
+  border-radius: 5px;
+  background: #f8f9fb;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.card-button {
+  width: 140px;
+  height: 85px;
+  border-radius: 0.25rem;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+  flex: 0 0 29%;
+  margin: .5rem .5rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-pointer {
+  color: var(--green20);
+  font-size: 12px;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  text-align: center;
+  flex: 0 0 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-nav {
+  font-size: 30px;
+}
+
+.buttons-nav, .buttons-nav + span{
+  color: var(--green20);
+
+}
+
+.card-button:hover {
+  background: linear-gradient(to right, #2ba962 0%, #2e6a99 98%, #2e6a99 100%);
+
+}
+
+.card-button:hover .buttons-nav, .card-button:hover .buttons-nav + span {
+  color: white;
+}
+
