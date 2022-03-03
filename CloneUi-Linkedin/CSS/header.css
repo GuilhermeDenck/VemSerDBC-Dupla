@@ -42,6 +42,9 @@ nav {
   color: black;
 }
 
+.left-menu li a:hover {
+  color: var(--blue10)}
+
 .left-menu li a > p {
   font-size: 12px;
 }
@@ -67,8 +70,7 @@ nav {
 }
 
 .fa-magnifying-glass {
-  color: #0275B1;
-}
+  color: var(--blue10)}
 
 input[type="text"] {
   width: 200px;
