@@ -70,11 +70,11 @@
   flex-direction: column;
 }
 
-.button-questions input{
+.button-questions input {
   padding-right: 70px;
   padding-left: 15px;
 }
-.button-settings input{
+.button-settings input {
   padding-right: 70px;
   padding-left: 15px;
 }
@@ -132,13 +132,17 @@
   -moz-appearance: none;
   width: 270px;
   height: 32px;
-  background-image: url(./Assets/chevron.down.png) no-repeat;
-  background-position: right;
+  background: url(../assets/chevron-down.png) no-repeat;
+  background-position: 240px;
   background-size: 20px;
   cursor: pointer;
-  border: 1px solid #f0f0f0;
+  border: 1px solid white;
   /* box-sizing: border-box; */
   border-radius: 4px;
   font-weight: bold;
   padding-left: 15px;
+}
+
+.footer-language select:focus {
+  outline: 1px solid var(--blue10);
 }
