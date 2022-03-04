@@ -43,7 +43,8 @@ nav {
 }
 
 .left-menu li a:hover {
-  color: var(--blue10)}
+  color: var(--blue10)
+}
 
 .left-menu li a > p {
   font-size: 12px;

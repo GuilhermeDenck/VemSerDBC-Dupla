@@ -132,7 +132,7 @@
   -moz-appearance: none;
   width: 270px;
   height: 32px;
-  background: url(../assets/chevron-down.png) no-repeat;
+  background: url(../img/chevron-down.png) no-repeat;
   background-position: 240px;
   background-size: 20px;
   cursor: pointer;

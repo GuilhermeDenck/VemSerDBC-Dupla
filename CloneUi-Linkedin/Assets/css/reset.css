@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Gotham Pro';
-  src: url(../assets/fonts/Gotham\ Pro\ Regular.ttf);
+  src: url(../fonts/Gotham\ Pro\ Regular.ttf);
 }
 
 :root {
@@ -19,13 +19,14 @@ body {
   background-color:rgba(248, 248, 250, 1);
 }
 
-.container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
 main{
   width: 75%;
+}
+
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 section {
