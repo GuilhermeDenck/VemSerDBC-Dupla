@@ -1,10 +1,10 @@
 aside {
+  width: 25%;
+  height: 360px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   margin: 40px 130px 20px 40px ;
-  width: 25%;
-  height: 360px;
-  margin-left: 40px;
+  margin-left: 5%;
   background-color: blue;
 }
