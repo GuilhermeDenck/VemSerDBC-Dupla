@@ -1,0 +1,9 @@
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 25%;
+  height: 360px;
+  background-color: blue;
+}
