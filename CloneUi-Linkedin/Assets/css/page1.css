@@ -1,3 +1,124 @@
+/* Section 1.1 */
+.section-profile {
+  background-image: url(../assets/Rectangle\ 3.svg);
+  height: 8%;
+  width: 100%;
+  background-repeat: repeat-x;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-profile > div > ul {
+  display: flex;
+  padding: 15px 30px;
+}
+
+.section-profile > div > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 4px;
+  max-width: 100%;
+  padding: 4px 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.section-profile > div > ul > li:hover {
+  cursor: pointer;
+}
+.icon-size {
+  width: 16px;
+  height: 16px;
+}
+.margin-left {
+  margin-left: 11px;
+}
+/* section 1.2 */
+
+.section1-profile {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.profile-photo {
+  width: auto;
+  position: relative;
+  top: -40px;
+  padding: 0px 0px 0px 25px;
+}
+
+.name-location-profile {
+  display: grid;
+  grid-template-columns: auto 260px;
+  padding: 20px 10px 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-icon-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.name-icon-profile > img {
+  margin-left: 8px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.text-decoration {
+  font-size: 12px;
+  line-height: 150%;
+  text-align: left;
+}
+.text-freelance {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  line-height: 150%;
+  margin: 0px 20px 14px 0px;
+  color: #181818 text-transform uppercase;
+}
+.buttons-profile [type='button']:first-child {
+  background-color: #0275b1;
+  color: white;
+  width: 170px;
+  height: 32px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+.buttons-profile input[type='button']:nth-child(2) {
+  background-color: transparent;
+  color: var(--blue10);
+  width: 170px;
+  height: 32px;
+  border-radius: 4px;
+  border: none;
+  outline: 1px solid var(--blue10);
+  cursor: pointer;
+  margin-bottom: 35px;
+  margin-left: 15px;
+}
+
+.buttons-profile input[type='button']:hover:first-child {
+  background-color: transparent;
+  color: var(--blue10);
+  outline: 1px solid var(--blue10);
+  transition: ease-in-out 200ms;
+}
+
+.buttons-profile input[type='button']:hover:nth-child(2) {
+  background-color: var(--blue10);
+  color: white;
+  outline: none;
+  transition: ease-in-out 200ms;
+}
 
 /* Section 2 */
 
