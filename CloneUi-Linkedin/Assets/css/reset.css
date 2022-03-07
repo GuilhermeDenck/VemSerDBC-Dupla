@@ -19,7 +19,7 @@ body {
   background-color:rgba(248, 248, 250, 1);
 }
 
-main{
+main, .main-feed{
   width: 75%;
 }
 
