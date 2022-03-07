@@ -19,10 +19,13 @@ body {
   background-color:rgba(248, 248, 250, 1);
 }
 
-main, .main-feed{
+main{
   width: 75%;
 }
 
+.main-feed {
+  width: 63%;
+}
 
 .container {
   width: 1200px;
